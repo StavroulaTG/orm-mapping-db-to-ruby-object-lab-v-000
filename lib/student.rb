@@ -32,7 +32,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql, name).map do |row|
-      self.find_by_name(row)
+      self.new_from_db(row)
       end.first
     end
     # find the student in the database given a name
