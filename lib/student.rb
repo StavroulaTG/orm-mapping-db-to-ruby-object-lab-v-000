@@ -94,7 +94,6 @@ class Student
       WHERE grade = 10
       ORDER BY students.id
       LIMIT 1
-
     SQL
 
     DB[:conn].execute(sql).map do |row|
