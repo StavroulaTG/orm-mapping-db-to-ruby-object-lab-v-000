@@ -12,7 +12,7 @@ class Student
 
   def self.all
     sql = <<-SQL
-    SELECT * FROM students
+    SELECT * FROM self
     SQL
     # retrieve all the rows from the "Students" database
     # remember each row should be a new instance of the Student class
